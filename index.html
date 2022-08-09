@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style/style.css">
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css"
+    />
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+<body>
+
+  <main>
+    <div class="container">
+      <div class="credit-card-box">
+        <div class="credit-card-wrapper">
+          <div class="credit-card-back">
+            <div class="bg"><img src="./images/bg-card-back.png" alt="card-back"></div>
+            <div class="cvc">000</div>
+          </div>
+          <div class="credit-card-front">
+            <div class="bg">
+              <img src="/images/bg-card-front.png" alt="card-front">
+              
+            </div>
+            <div class="credit-card-info">
+              <div class="logo">
+                <img src="/images/card-logo.svg" alt="logo">
+              </div>
+              <div class="cardNumber">
+                0000 0000 0000 0000
+              </div>
+              <div class="name-date">
+                <div class="name">
+                  Jane Appleseed
+                </div>
+                <div  class="date">
+                  <p id="month-display">00</p>/
+                  <p id="year-display">00</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="input-box">
+        <form action="#" id="form">
+          <div class="card-row">
+            <div class="card__col">
+              <label for="cardNameInput" class="card__label">Cardholder Name</label>
+              <input type="text" class="card-input" id="cardname" placeholder="e.g. Jane Appleseed" oninput="inputName()"/>
+              <p id="errorMsgName"></p>
+            </div>
+          </div>
+          <div class="card-row">
+            <div class="card__col">
+              <label for="cardNumberInput" class="card__label">Card Number</label>
+              <input type="text" class="card-input" id="cardnumber" placeholder="e.g. 1234 5678 9123 0000" oninput="inputNumber()"/>
+              <p id="errorMsgNumber"></p>
+            </div>
+          </div>
+          <div class="card-row">
+            <div class="month-years-box">
+              <div class="card__col">
+                <label for="cardDate" class="card__label">Exp. Date (MM/YY)</label>
+                  <div class="date-flex">
+                    <input type="text" class="card-input-date" id="dateMonth" placeholder="MM" oninput="inputMM()"/>
+                    <input type="text" class="card-input-date" id="dateYear" placeholder="YY" oninput="inputYY()"/>
+                  </div>
+                  <p class="errorMsgDate" id="errorMsgDate"></p>
+              </div>
+            </div>
+            <div class="cvc-box">
+              <div class="card__col">
+                <label for="cardCvcInput" class="card__label">CVC</label>
+                <input type="text" class="card-input" id="cvc" placeholder="e.g. 123" oninput="inputCvc()"/>
+                <p id="errorMsgCvc"></p>
+              </div>
+            </div>
+            
+          </div>
+          <button class="confirm" type="submit" id="submit">Confirm</button>
+        </form>
+
+        <div class="thank hidden" id="thank">
+          <img src="/images/icon-complete.svg" alt="complete">
+          <h2 id="thank-header">Thank you!</h2>
+          <p>We've added your card details</p>
+          <div class="continue" id="continue">continue</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/cleave.min.js"></script>
+  <script src="app.js"></script>
+  
+  
+</body>
+</html>

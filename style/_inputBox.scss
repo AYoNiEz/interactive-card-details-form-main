@@ -1,0 +1,124 @@
+.input-box{
+    height: 65vh;
+    padding: 4rem 1.5rem 0rem;
+    position: relative;
+    opacity: 1;
+    .hidden{
+        display: none;
+    }
+    form{
+        
+        .card-row{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            width: 100%;
+            gap: 1rem;
+            margin-bottom: 0.4rem;
+            .card__col{
+                gap: 0.5rem;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                p{
+                    font-size: 0.8rem;
+                    color: red;
+                    opacity: 1;
+                }
+            }
+            .month-years-box{
+                width: 50%;
+                display: flex;
+                align-items: center;
+                
+                flex-direction: row;
+                .card__col{
+                    gap: 0.5rem;
+                    display: flex;
+                    flex-direction: column;
+                    .date-flex{
+                        display: flex;
+                        align-items: center;
+                        flex-direction: row;
+                        gap: 0.5rem;
+                        .card-input-date{
+                            width: 50%;
+                            font-size: 1rem;
+                            padding:0.7rem 1rem;
+                            border: 1px solid $Lightgrayishviolet;
+                            border-radius: 0.5rem;
+                            &:focus{
+                                border: 1px solid $Verydarkviolet;
+                                outline: none;
+                            }
+                        }
+                        .card-input-date::placeholder{
+                            font-size: 1rem;
+                            color: $Lightgrayishviolet;
+                            font-family: 'Space Grotesk', sans-serif;
+                        }
+                        .error{
+                            border: 1px solid $Red;
+                        }
+                    }
+                    
+                }
+                
+            }
+            .cvc-box{
+                width: 50%;
+                .cardCvc{
+                    padding: 1rem;
+                }
+            }
+            .card__label{
+                color: $Verydarkviolet;
+                text-transform: uppercase;
+                font-size: 0.8rem;
+                letter-spacing: 0.1rem;
+            }
+            .card-input{
+                font-size: 1rem;
+                padding:0.7rem 1rem;
+                border: 1px solid $Lightgrayishviolet;
+                border-radius: 0.5rem;
+            }
+            .card-input:focus{
+                border: 1px solid $Verydarkviolet;
+                outline: none;
+            }
+            .error{
+                border: 1px solid $Red;
+            }
+            
+            .card-input::placeholder{
+                font-size: 1rem;
+                color: $Lightgrayishviolet;
+                font-family: 'Space Grotesk', sans-serif;
+            }
+        }
+        .confirm{
+            width: 100%;
+            background-color: $Verydarkviolet;
+            color: white;
+            padding: 1rem;
+            font-size: 1.2rem;
+            font-family: 'Space Grotesk', sans-serif;
+            border-radius: 0.5rem;
+            border: 1px solid transparent;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+    }
+}
+@media screen and(min-width: 1000px) {
+    .input-box{
+        width: 50%;
+        
+        form{
+            width: 70%;
+            
+            
+        }
+    }
+}

@@ -1,0 +1,518 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: unset;
+}
+
+.container .credit-card-box {
+  background-image: url(/images/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .credit-card-box .credit-card-wrapper {
+  margin: 0 auto;
+  width: 375px;
+  position: relative;
+}
+
+.container .credit-card-box .credit-card-wrapper .credit-card-back {
+  width: 300px;
+  position: absolute;
+  top: 2rem;
+  right: 0.5rem;
+}
+
+.container .credit-card-box .credit-card-wrapper .credit-card-back .bg img {
+  width: 100%;
+}
+
+.container .credit-card-box .credit-card-wrapper .credit-card-back .cvc {
+  top: 44%;
+  right: 12%;
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 0.7rem;
+}
+
+.container .credit-card-box .credit-card-wrapper .credit-card-front {
+  left: 0.5rem;
+  width: 300px;
+  top: 7.8rem;
+  position: absolute;
+  z-index: 10;
+}
+
+.container .credit-card-box .credit-card-wrapper .credit-card-front .bg img {
+  width: 100%;
+}
+
+.container .credit-card-box .credit-card-wrapper .credit-card-front .credit-card-info {
+  padding: 1.2rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 165px;
+  position: absolute;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .credit-card-box .credit-card-wrapper .credit-card-front .credit-card-info .logo img {
+  width: 60px;
+}
+
+.container .credit-card-box .credit-card-wrapper .credit-card-front .credit-card-info .name-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .credit-card-box .credit-card-wrapper .credit-card-front .credit-card-info .name-date .name {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  letter-spacing: 0.1rem;
+}
+
+.container .credit-card-box .credit-card-wrapper .credit-card-front .credit-card-info .name-date .date {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  letter-spacing: 0.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .credit-card-box .credit-card-wrapper .credit-card-front .credit-card-info .cardNumber {
+  margin-top: 1rem;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  font-size: 1.1rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-image: url(/images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .container .credit-card-box {
+    height: 100vh;
+    width: 50%;
+    background-image: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .credit-card-box .credit-card-wrapper {
+    height: 100%;
+    width: 50%;
+  }
+  .container .credit-card-box .credit-card-wrapper .credit-card-back {
+    width: 400px;
+    position: absolute;
+    top: 25rem;
+    right: -5rem;
+  }
+  .container .credit-card-box .credit-card-wrapper .credit-card-back .bg img {
+    width: 100%;
+  }
+  .container .credit-card-box .credit-card-wrapper .credit-card-back .cvc {
+    top: 44%;
+    right: 12%;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 0.9rem;
+  }
+  .container .credit-card-box .credit-card-wrapper .credit-card-front {
+    left: -5rem;
+    width: 400px;
+    top: 10rem;
+    position: absolute;
+    z-index: 10;
+  }
+  .container .credit-card-box .credit-card-wrapper .credit-card-front .bg img {
+    width: 100%;
+  }
+  .container .credit-card-box .credit-card-wrapper .credit-card-front .credit-card-info {
+    padding: 1.4rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 220px;
+    position: absolute;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .credit-card-box .credit-card-wrapper .credit-card-front .credit-card-info .logo img {
+    width: 80px;
+  }
+  .container .credit-card-box .credit-card-wrapper .credit-card-front .credit-card-info .name-date {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .credit-card-box .credit-card-wrapper .credit-card-front .credit-card-info .name-date .name {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+  }
+  .container .credit-card-box .credit-card-wrapper .credit-card-front .credit-card-info .name-date .date {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container .credit-card-box .credit-card-wrapper .credit-card-front .credit-card-info .cardNumber {
+    margin-top: 2rem;
+    text-align: start;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+  }
+}
+
+.input-box {
+  height: 65vh;
+  padding: 4rem 1.5rem 0rem;
+  position: relative;
+  opacity: 1;
+}
+
+.input-box .hidden {
+  display: none;
+}
+
+.input-box form .card-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  gap: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.input-box form .card-row .card__col {
+  gap: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.input-box form .card-row .card__col p {
+  font-size: 0.8rem;
+  color: red;
+  opacity: 1;
+}
+
+.input-box form .card-row .month-years-box {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.input-box form .card-row .month-years-box .card__col {
+  gap: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.input-box form .card-row .month-years-box .card__col .date-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.5rem;
+}
+
+.input-box form .card-row .month-years-box .card__col .date-flex .card-input-date {
+  width: 50%;
+  font-size: 1rem;
+  padding: 0.7rem 1rem;
+  border: 1px solid #dedddf;
+  border-radius: 0.5rem;
+}
+
+.input-box form .card-row .month-years-box .card__col .date-flex .card-input-date:focus {
+  border: 1px solid #21092f;
+  outline: none;
+}
+
+.input-box form .card-row .month-years-box .card__col .date-flex .card-input-date::-webkit-input-placeholder {
+  font-size: 1rem;
+  color: #dedddf;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.input-box form .card-row .month-years-box .card__col .date-flex .card-input-date:-ms-input-placeholder {
+  font-size: 1rem;
+  color: #dedddf;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.input-box form .card-row .month-years-box .card__col .date-flex .card-input-date::-ms-input-placeholder {
+  font-size: 1rem;
+  color: #dedddf;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.input-box form .card-row .month-years-box .card__col .date-flex .card-input-date::placeholder {
+  font-size: 1rem;
+  color: #dedddf;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.input-box form .card-row .month-years-box .card__col .date-flex .error {
+  border: 1px solid #ff5252;
+}
+
+.input-box form .card-row .cvc-box {
+  width: 50%;
+}
+
+.input-box form .card-row .cvc-box .cardCvc {
+  padding: 1rem;
+}
+
+.input-box form .card-row .card__label {
+  color: #21092f;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+}
+
+.input-box form .card-row .card-input {
+  font-size: 1rem;
+  padding: 0.7rem 1rem;
+  border: 1px solid #dedddf;
+  border-radius: 0.5rem;
+}
+
+.input-box form .card-row .card-input:focus {
+  border: 1px solid #21092f;
+  outline: none;
+}
+
+.input-box form .card-row .error {
+  border: 1px solid #ff5252;
+}
+
+.input-box form .card-row .card-input::-webkit-input-placeholder {
+  font-size: 1rem;
+  color: #dedddf;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.input-box form .card-row .card-input:-ms-input-placeholder {
+  font-size: 1rem;
+  color: #dedddf;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.input-box form .card-row .card-input::-ms-input-placeholder {
+  font-size: 1rem;
+  color: #dedddf;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.input-box form .card-row .card-input::placeholder {
+  font-size: 1rem;
+  color: #dedddf;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.input-box form .confirm {
+  width: 100%;
+  background-color: #21092f;
+  color: white;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-family: 'Space Grotesk', sans-serif;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .input-box {
+    width: 50%;
+  }
+  .input-box form {
+    width: 70%;
+  }
+}
+
+.thank {
+  z-index: 2rem;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0rem 2rem;
+  -webkit-transition: mymove  1s ease;
+  transition: mymove  1s ease;
+}
+
+.thank img {
+  width: 100px;
+}
+
+.thank h2 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  padding: 3rem 0rem 1rem;
+}
+
+.thank .continue {
+  width: 100%;
+  background-color: #21092f;
+  color: white;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-family: 'Space Grotesk', sans-serif;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+@-webkit-keyframes mymove {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 100px;
+  }
+}
+
+@keyframes mymove {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 100px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .thank {
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+}
+/*# sourceMappingURL=style.css.map */
